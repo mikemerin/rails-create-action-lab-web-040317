@@ -1,1 +1,11 @@
-<!-- Create your form here -->
+<h1>Student Form</h1>
+
+<%= form_tag @student do  %>
+
+  <div>First Name: <%= text_field_tag :first_name %> </div>
+  <div>Last Name: <%= text_field_tag :last_name %> </div>
+  <div>Submit: <%= submit_tag "Submit Student" %></div>
+
+<% end %><br>
+
+<%= link_to "Back", students_path %>
